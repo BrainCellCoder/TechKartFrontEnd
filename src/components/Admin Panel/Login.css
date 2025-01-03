@@ -1,0 +1,13 @@
+#admin-login {
+  height: 71vh;
+  margin-top: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#admin-login form {
+  /* background-color: red; */
+  padding: 2rem;
+  border-radius: 20px;
+}

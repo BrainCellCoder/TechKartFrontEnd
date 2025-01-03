@@ -1,0 +1,12 @@
+/* Make the footer stick to the bottom */
+
+#footer {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+  /* position: absolute; */
+  /* bottom: 0; */
+  margin-top: auto; /* Pushes footer to the bottom */
+}
