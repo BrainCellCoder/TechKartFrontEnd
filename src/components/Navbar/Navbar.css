@@ -1,0 +1,171 @@
+/* Basic Navbar styles */
+.navbar {
+  background-color: #fff; /* White background */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light box shadow */
+  transition: all 0.3s ease;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #2d3e50; /* Dark text color */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+#logo {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+#T,
+#K {
+  color: violet;
+}
+
+.navbar-toggler {
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-nav a,
+.navbar-nav button {
+  font-size: 1rem;
+  color: #2d3e50; /* Dark text color */
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navbar-nav a:hover,
+.navbar-nav button:hover {
+  background-color: #ff9900;
+  color: #fff;
+  border-color: #ff9900;
+}
+
+.navbar-nav .product-search {
+  display: flex;
+  align-items: center;
+}
+
+.product-search input {
+  padding: 10px;
+  border-radius: 30px;
+  border: 2px solid #2d3e50; /* Dark border */
+  background-color: transparent;
+  color: #2d3e50; /* Dark text color */
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.product-search input:focus {
+  border-color: #ff9900;
+}
+
+.product-search button {
+  background: none;
+  border: none;
+  color: #2d3e50; /* Dark text color */
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.product-search button:hover {
+  color: #ff9900;
+}
+
+.wish-cart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.wish-cart img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.wish-cart img:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-collapse {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar-collapse.show {
+    display: flex;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-nav a,
+  .navbar-nav button {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+}
