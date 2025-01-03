@@ -1,0 +1,53 @@
+#userdashboard {
+  margin-top: 66px;
+  min-height: 71vh;
+  margin-bottom: 50px;
+}
+
+.css-11yukd5-MuiTabs-indicator {
+  background-color: #fff !important;
+}
+
+#userdashboard .user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  padding: 2rem;
+  justify-content: space-around;
+  height: 300px;
+}
+
+#userdashboard .user h1 {
+  font-size: 4rem;
+}
+
+#userdashboard .user > div {
+  display: flex;
+  align-items: center;
+}
+
+#userdashboard .user .user-details {
+  margin-left: 20px;
+  font-size: 1.3rem;
+}
+
+#userdashboard .user .edit-profile {
+  color: #0466c8;
+  cursor: pointer;
+}
+
+#userdashboard .user .edit-profile:hover {
+  color: #002855;
+}
+
+.tabpanel {
+  width: 90%;
+  overflow: scroll;
+  padding: 0 4rem;
+}
+
+.order-product-img {
+  width: 100px;
+}
