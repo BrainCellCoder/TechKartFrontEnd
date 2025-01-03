@@ -1,0 +1,79 @@
+.hero2 {
+  display: flex;
+  height: 41vh;
+  margin-top: 66px;
+  flex-direction: column;
+  padding: 4rem 6rem !important;
+  background-image: url("smartphone-with-headphones.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  align-items: flex-end;
+  transition: 0.3s ease-in-out;
+}
+
+.hero2 h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #10002b;
+  text-align: right;
+}
+
+.hero2 .accessories-explore {
+  width: 150px;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  margin-top: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  background-color: #7b2cbf;
+  transition: 0.3s ease-in-out;
+}
+
+.hero2 .accessories-explore:hover {
+  background-color: #10002b;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 991px) {
+  .hero {
+    width: 100%;
+    padding: 2rem 3rem !important;
+    height: 35vh;
+  }
+  .hero h1 {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 864px) {
+  .hero2 {
+    /* background-size: contain; */
+    height: 30vh !important;
+    padding: 1.2rem 2rem !important;
+  }
+  .hero2 h1 {
+    font-size: 2.3rem;
+  }
+  .hero2 .accessories-explore {
+    width: 100px;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 533px) {
+  .hero2 {
+    height: 25vh !important;
+    padding: 1.2rem 2rem !important;
+  }
+  .hero2 h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero2 .accessories-explore {
+    width: 100px;
+    padding: 0.5rem;
+  }
+}

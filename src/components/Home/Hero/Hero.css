@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+.hero {
+  display: flex;
+  border-radius: 20px;
+  height: 41vh;
+  margin: auto;
+  margin-top: 66px;
+  width: 91%;
+  flex-direction: column;
+  background-color: #e5b3fe;
+  padding: 4rem 6rem !important;
+  background-image: url("heroGB.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  transition: 0.3s ease-in-out;
+  /* font-family: "Shadows Into Light", cursive; */
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  color: #10002b;
+  transition: 0.3s ease-in-out;
+}
+
+.hero h1 .sound {
+  /* text-shadow: 0px 0px 18px #fe0000ba; */
+  color: #f72585;
+  font-weight: 900;
+  /* letter-spacing: 0.3rem; */
+  /* text-transform: uppercase; */
+}
+
+.hero .headphones-buy-now {
+  width: 150px;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  margin-top: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  background-color: #7b2cbf;
+  transition: 0.3s ease-in-out;
+}
+
+.hero .headphones-buy-now:hover {
+  background-color: #10002b;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 991px) {
+  .hero {
+    width: 100%;
+    padding: 2rem 3rem !important;
+    height: 35vh;
+  }
+  .hero h1 {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 864px) {
+  .hero {
+    /* background-image: none; */
+    background-size: contain;
+    height: 30vh !important;
+    padding: 1.2rem 2rem !important;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero .headphones-buy-now {
+    /* margin: auto; */
+  }
+}
+
+@media (max-width: 573px) {
+  .hero {
+    height: 27vh !important;
+  }
+  .hero h1 {
+    font-size: 1.9rem !important;
+  }
+}
+
+@media (max-width: 533px) {
+  .hero {
+    height: 25vh !important;
+    padding: 1.2rem 2rem !important;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero .headphones-buy-now {
+    width: 120px !important;
+    font-size: 0.8rem !important;
+    padding: 0.5rem !important;
+    width: 100px !important;
+  }
+}
